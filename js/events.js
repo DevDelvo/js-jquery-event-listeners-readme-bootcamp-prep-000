@@ -1,6 +1,7 @@
 function getIt() {
-  return $('p').on("click"), function() {
+  $('p').on("click", function() {
     alert("Hey!");
+    return;
   });
 }
 
@@ -15,14 +16,8 @@ function pressIt() {
   $("form").on('keydown', function (key) {
     if (key.which == 71) {
       alert("G was pressed.");
+      return;
     }
-  });
-}
-
-function submitIt() {
-  $("form").on("submit", function () {
-    alert('Your form is going to be submitted now.');
-    return;
   });
 }
 $(document).ready(function(){
